@@ -30,6 +30,24 @@
         {
             tabControl1 = new TabControl();
             Unit_Tab = new TabPage();
+            MasterTalent_sumBox = new TextBox();
+            Crown_sumBox = new TextBox();
+            Tier4_sumBox = new TextBox();
+            Tier3_sumBox = new TextBox();
+            Tier2_sumBox = new TextBox();
+            Tier1_sumBox = new TextBox();
+            MasterTalent_numericBox = new NumericUpDown();
+            Crown_numericBox = new NumericUpDown();
+            Tier4_numericBox = new NumericUpDown();
+            Tier3_numericBox = new NumericUpDown();
+            Tier2_numericBox = new NumericUpDown();
+            Tier1_numericBox = new NumericUpDown();
+            MasterTalent_lbl = new Label();
+            Crown_lbl = new Label();
+            Tier4_lbl = new Label();
+            Tier3_lbl = new Label();
+            Tier2_lbl = new Label();
+            Tier1_lbl = new Label();
             Summon_Tab = new TabPage();
             PerfectScroll_sumbox = new TextBox();
             AdvancedScroll_sumbox = new TextBox();
@@ -75,6 +93,13 @@
             calcBtn = new Button();
             sumAll_Box = new TextBox();
             tabControl1.SuspendLayout();
+            Unit_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)MasterTalent_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Crown_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Tier4_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Tier3_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Tier2_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Tier1_numericBox).BeginInit();
             Summon_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).BeginInit();
@@ -108,12 +133,180 @@
             // Unit_Tab
             // 
             Unit_Tab.BackColor = SystemColors.ControlDark;
+            Unit_Tab.Controls.Add(MasterTalent_sumBox);
+            Unit_Tab.Controls.Add(Crown_sumBox);
+            Unit_Tab.Controls.Add(Tier4_sumBox);
+            Unit_Tab.Controls.Add(Tier3_sumBox);
+            Unit_Tab.Controls.Add(Tier2_sumBox);
+            Unit_Tab.Controls.Add(Tier1_sumBox);
+            Unit_Tab.Controls.Add(MasterTalent_numericBox);
+            Unit_Tab.Controls.Add(Crown_numericBox);
+            Unit_Tab.Controls.Add(Tier4_numericBox);
+            Unit_Tab.Controls.Add(Tier3_numericBox);
+            Unit_Tab.Controls.Add(Tier2_numericBox);
+            Unit_Tab.Controls.Add(Tier1_numericBox);
+            Unit_Tab.Controls.Add(MasterTalent_lbl);
+            Unit_Tab.Controls.Add(Crown_lbl);
+            Unit_Tab.Controls.Add(Tier4_lbl);
+            Unit_Tab.Controls.Add(Tier3_lbl);
+            Unit_Tab.Controls.Add(Tier2_lbl);
+            Unit_Tab.Controls.Add(Tier1_lbl);
             Unit_Tab.Location = new Point(4, 24);
             Unit_Tab.Name = "Unit_Tab";
             Unit_Tab.Padding = new Padding(3);
             Unit_Tab.Size = new Size(768, 369);
             Unit_Tab.TabIndex = 0;
             Unit_Tab.Text = "Unit";
+            // 
+            // MasterTalent_sumBox
+            // 
+            MasterTalent_sumBox.Location = new Point(551, 53);
+            MasterTalent_sumBox.Name = "MasterTalent_sumBox";
+            MasterTalent_sumBox.ReadOnly = true;
+            MasterTalent_sumBox.Size = new Size(100, 23);
+            MasterTalent_sumBox.TabIndex = 17;
+            // 
+            // Crown_sumBox
+            // 
+            Crown_sumBox.Location = new Point(551, 14);
+            Crown_sumBox.Name = "Crown_sumBox";
+            Crown_sumBox.ReadOnly = true;
+            Crown_sumBox.Size = new Size(100, 23);
+            Crown_sumBox.TabIndex = 16;
+            // 
+            // Tier4_sumBox
+            // 
+            Tier4_sumBox.Location = new Point(185, 131);
+            Tier4_sumBox.Name = "Tier4_sumBox";
+            Tier4_sumBox.ReadOnly = true;
+            Tier4_sumBox.Size = new Size(100, 23);
+            Tier4_sumBox.TabIndex = 15;
+            // 
+            // Tier3_sumBox
+            // 
+            Tier3_sumBox.Location = new Point(185, 92);
+            Tier3_sumBox.Name = "Tier3_sumBox";
+            Tier3_sumBox.ReadOnly = true;
+            Tier3_sumBox.Size = new Size(100, 23);
+            Tier3_sumBox.TabIndex = 14;
+            // 
+            // Tier2_sumBox
+            // 
+            Tier2_sumBox.Location = new Point(185, 53);
+            Tier2_sumBox.Name = "Tier2_sumBox";
+            Tier2_sumBox.ReadOnly = true;
+            Tier2_sumBox.Size = new Size(100, 23);
+            Tier2_sumBox.TabIndex = 13;
+            // 
+            // Tier1_sumBox
+            // 
+            Tier1_sumBox.Location = new Point(185, 14);
+            Tier1_sumBox.Name = "Tier1_sumBox";
+            Tier1_sumBox.ReadOnly = true;
+            Tier1_sumBox.Size = new Size(100, 23);
+            Tier1_sumBox.TabIndex = 12;
+            // 
+            // MasterTalent_numericBox
+            // 
+            MasterTalent_numericBox.Location = new Point(425, 53);
+            MasterTalent_numericBox.Name = "MasterTalent_numericBox";
+            MasterTalent_numericBox.Size = new Size(120, 23);
+            MasterTalent_numericBox.TabIndex = 11;
+            MasterTalent_numericBox.ValueChanged += MasterTalent_numericBox_ValueChanged;
+            // 
+            // Crown_numericBox
+            // 
+            Crown_numericBox.Location = new Point(425, 14);
+            Crown_numericBox.Name = "Crown_numericBox";
+            Crown_numericBox.Size = new Size(120, 23);
+            Crown_numericBox.TabIndex = 10;
+            Crown_numericBox.ValueChanged += Crown_numericBox_ValueChanged;
+            // 
+            // Tier4_numericBox
+            // 
+            Tier4_numericBox.Location = new Point(59, 131);
+            Tier4_numericBox.Name = "Tier4_numericBox";
+            Tier4_numericBox.Size = new Size(120, 23);
+            Tier4_numericBox.TabIndex = 9;
+            Tier4_numericBox.ValueChanged += Tier4_numericBox_ValueChanged;
+            // 
+            // Tier3_numericBox
+            // 
+            Tier3_numericBox.Location = new Point(59, 92);
+            Tier3_numericBox.Name = "Tier3_numericBox";
+            Tier3_numericBox.Size = new Size(120, 23);
+            Tier3_numericBox.TabIndex = 8;
+            Tier3_numericBox.ValueChanged += Tier3_numericBox_ValueChanged;
+            // 
+            // Tier2_numericBox
+            // 
+            Tier2_numericBox.Location = new Point(59, 53);
+            Tier2_numericBox.Name = "Tier2_numericBox";
+            Tier2_numericBox.Size = new Size(120, 23);
+            Tier2_numericBox.TabIndex = 7;
+            Tier2_numericBox.ValueChanged += Tier2_numericBox_ValueChanged;
+            // 
+            // Tier1_numericBox
+            // 
+            Tier1_numericBox.Location = new Point(59, 14);
+            Tier1_numericBox.Name = "Tier1_numericBox";
+            Tier1_numericBox.Size = new Size(120, 23);
+            Tier1_numericBox.TabIndex = 6;
+            Tier1_numericBox.ValueChanged += Tier1_numericBox_ValueChanged;
+            // 
+            // MasterTalent_lbl
+            // 
+            MasterTalent_lbl.AutoSize = true;
+            MasterTalent_lbl.Location = new Point(334, 55);
+            MasterTalent_lbl.Name = "MasterTalent_lbl";
+            MasterTalent_lbl.Size = new Size(76, 15);
+            MasterTalent_lbl.TabIndex = 5;
+            MasterTalent_lbl.Text = "Master talent";
+            // 
+            // Crown_lbl
+            // 
+            Crown_lbl.AutoSize = true;
+            Crown_lbl.Location = new Point(334, 16);
+            Crown_lbl.Name = "Crown_lbl";
+            Crown_lbl.Size = new Size(42, 15);
+            Crown_lbl.TabIndex = 4;
+            Crown_lbl.Text = "Crown";
+            // 
+            // Tier4_lbl
+            // 
+            Tier4_lbl.AutoSize = true;
+            Tier4_lbl.Location = new Point(18, 133);
+            Tier4_lbl.Name = "Tier4_lbl";
+            Tier4_lbl.Size = new Size(35, 15);
+            Tier4_lbl.TabIndex = 3;
+            Tier4_lbl.Text = "Tier 4";
+            // 
+            // Tier3_lbl
+            // 
+            Tier3_lbl.AutoSize = true;
+            Tier3_lbl.Location = new Point(18, 94);
+            Tier3_lbl.Name = "Tier3_lbl";
+            Tier3_lbl.Size = new Size(35, 15);
+            Tier3_lbl.TabIndex = 2;
+            Tier3_lbl.Text = "Tier 3";
+            // 
+            // Tier2_lbl
+            // 
+            Tier2_lbl.AutoSize = true;
+            Tier2_lbl.Location = new Point(18, 55);
+            Tier2_lbl.Name = "Tier2_lbl";
+            Tier2_lbl.Size = new Size(35, 15);
+            Tier2_lbl.TabIndex = 1;
+            Tier2_lbl.Text = "Tier 2";
+            // 
+            // Tier1_lbl
+            // 
+            Tier1_lbl.AutoSize = true;
+            Tier1_lbl.Location = new Point(18, 16);
+            Tier1_lbl.Name = "Tier1_lbl";
+            Tier1_lbl.Size = new Size(35, 15);
+            Tier1_lbl.TabIndex = 0;
+            Tier1_lbl.Text = "Tier 1";
             // 
             // Summon_Tab
             // 
@@ -567,6 +760,14 @@
             Name = "KingdomGuardCalcForm";
             Text = "KingdomGuardCalcForm";
             tabControl1.ResumeLayout(false);
+            Unit_Tab.ResumeLayout(false);
+            Unit_Tab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)MasterTalent_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Crown_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Tier4_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Tier3_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Tier2_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Tier1_numericBox).EndInit();
             Summon_Tab.ResumeLayout(false);
             Summon_Tab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).EndInit();
@@ -635,5 +836,23 @@
         private Label AdvancedScroll_lbl;
         private TextBox PerfectScroll_sumbox;
         private TextBox AdvancedScroll_sumbox;
+        private Label Tier1_lbl;
+        private Label Tier4_lbl;
+        private Label Tier3_lbl;
+        private Label Tier2_lbl;
+        private Label MasterTalent_lbl;
+        private Label Crown_lbl;
+        private NumericUpDown MasterTalent_numericBox;
+        private NumericUpDown Crown_numericBox;
+        private NumericUpDown Tier4_numericBox;
+        private NumericUpDown Tier3_numericBox;
+        private NumericUpDown Tier2_numericBox;
+        private NumericUpDown Tier1_numericBox;
+        private TextBox Tier1_sumBox;
+        private TextBox MasterTalent_sumBox;
+        private TextBox Crown_sumBox;
+        private TextBox Tier4_sumBox;
+        private TextBox Tier3_sumBox;
+        private TextBox Tier2_sumBox;
     }
 }

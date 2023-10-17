@@ -18,6 +18,14 @@ namespace KingdomGuardEventCalculator
         private long advancedScrollValue = 0;
         private long perfectScrollValue = 0;
 
+        private long tier1Value = 0;
+        private long tier2Value = 0;
+        private long tier3Value = 0;
+        private long tier4Value = 0;
+        private long crownsValue = 0;
+        private long masterTalentValue = 0;
+
+        UnitPhaseController unitPhaseController = new UnitPhaseController();
         HeroPhaseController heroPhaseController = new HeroPhaseController();
         SummonPhaseController summonPhaseController = new SummonPhaseController();
 
@@ -103,12 +111,51 @@ namespace KingdomGuardEventCalculator
         }
         #endregion
 
+        #region Unit phase
+        private void Tier1_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            tier1Value = (long)Tier1_numericBox.Value;
+            UpdateSumBox(tier1Value, Tier1_sumBox, 800);
+        }
+
+        private void Tier2_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            tier2Value = (long)Tier2_numericBox.Value;
+            UpdateSumBox(tier2Value, Tier2_sumBox, 4000);
+        }
+
+        private void Tier3_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            tier3Value = (long)Tier3_numericBox.Value;
+            UpdateSumBox(tier3Value, Tier3_sumBox, 20000);
+        }
+
+        private void Tier4_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            tier4Value = (long)Tier4_numericBox.Value;
+            UpdateSumBox(tier4Value, Tier4_sumBox, 100000);
+        }
+
+        private void Crown_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            crownsValue = (long)Crown_numericBox.Value;
+            UpdateSumBox(crownsValue, Crown_sumBox, 5);
+        }
+
+        private void MasterTalent_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            masterTalentValue = (long)MasterTalent_numericBox.Value;
+            UpdateSumBox(masterTalentValue, MasterTalent_sumBox, 56);
+        }
+        #endregion
+
         private void calcBtn_Click(object sender, EventArgs e)
         {
-            var sumHeroPhase = heroPhaseController.CalculateTotalHeroPhasePoints(nValue, rValue, srValue, ssrValue);
-            var sumSummonPhase = summonPhaseController.CalculateTotalSummonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, lightValue, forgeValue, advancedScrollValue, perfectScrollValue);
+            var totalUnitPhase = unitPhaseController.CalculateTotalUnitPhase(tier1Value, tier2Value, tier3Value, tier4Value, crownsValue, masterTalentValue);
+            var totalHeroPhase = heroPhaseController.CalculateTotalHeroPhasePoints(nValue, rValue, srValue, ssrValue);
+            var totalSummonPhase = summonPhaseController.CalculateTotalSummonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, lightValue, forgeValue, advancedScrollValue, perfectScrollValue);
 
-            var sumAllPhases = sumHeroPhase + sumSummonPhase;
+            var sumAllPhases = totalUnitPhase + totalHeroPhase + totalSummonPhase;
 
             sumAll_Box.Text = sumAllPhases.ToString("N0");
         }
