@@ -43,13 +43,20 @@
             R_NumericBox = new NumericUpDown();
             SR_NumericBox = new NumericUpDown();
             N_NumericBox = new NumericUpDown();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            SSR_lbl = new Label();
+            SR_lbl = new Label();
+            R_lbl = new Label();
+            N_lbl = new Label();
             calcBtn = new Button();
             sumAll_Box = new TextBox();
+            RareRune_lbl = new Label();
+            ExcellentRune_lbl = new Label();
+            PerfectRune_lbl = new Label();
+            EpicRune_lbl = new Label();
+            Light_lbl = new Label();
+            Forge_lbl = new Label();
             tabControl1.SuspendLayout();
+            Summon_Tab.SuspendLayout();
             Hero_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).BeginInit();
@@ -84,6 +91,12 @@
             // Summon_Tab
             // 
             Summon_Tab.BackColor = SystemColors.ControlDark;
+            Summon_Tab.Controls.Add(Forge_lbl);
+            Summon_Tab.Controls.Add(Light_lbl);
+            Summon_Tab.Controls.Add(EpicRune_lbl);
+            Summon_Tab.Controls.Add(PerfectRune_lbl);
+            Summon_Tab.Controls.Add(ExcellentRune_lbl);
+            Summon_Tab.Controls.Add(RareRune_lbl);
             Summon_Tab.Location = new Point(4, 24);
             Summon_Tab.Name = "Summon_Tab";
             Summon_Tab.Padding = new Padding(3);
@@ -130,10 +143,10 @@
             Hero_Tab.Controls.Add(R_NumericBox);
             Hero_Tab.Controls.Add(SR_NumericBox);
             Hero_Tab.Controls.Add(N_NumericBox);
-            Hero_Tab.Controls.Add(label4);
-            Hero_Tab.Controls.Add(label3);
-            Hero_Tab.Controls.Add(label2);
-            Hero_Tab.Controls.Add(label1);
+            Hero_Tab.Controls.Add(SSR_lbl);
+            Hero_Tab.Controls.Add(SR_lbl);
+            Hero_Tab.Controls.Add(R_lbl);
+            Hero_Tab.Controls.Add(N_lbl);
             Hero_Tab.Location = new Point(4, 24);
             Hero_Tab.Name = "Hero_Tab";
             Hero_Tab.Size = new Size(768, 369);
@@ -208,41 +221,41 @@
             N_NumericBox.TabIndex = 4;
             N_NumericBox.ValueChanged += N_NumericBox_ValueChanged;
             // 
-            // label4
+            // SSR_lbl
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(17, 133);
-            label4.Name = "label4";
-            label4.Size = new Size(26, 15);
-            label4.TabIndex = 3;
-            label4.Text = "SSR";
+            SSR_lbl.AutoSize = true;
+            SSR_lbl.Location = new Point(18, 133);
+            SSR_lbl.Name = "SSR_lbl";
+            SSR_lbl.Size = new Size(26, 15);
+            SSR_lbl.TabIndex = 3;
+            SSR_lbl.Text = "SSR";
             // 
-            // label3
+            // SR_lbl
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(18, 94);
-            label3.Name = "label3";
-            label3.Size = new Size(20, 15);
-            label3.TabIndex = 2;
-            label3.Text = "SR";
+            SR_lbl.AutoSize = true;
+            SR_lbl.Location = new Point(18, 94);
+            SR_lbl.Name = "SR_lbl";
+            SR_lbl.Size = new Size(20, 15);
+            SR_lbl.TabIndex = 2;
+            SR_lbl.Text = "SR";
             // 
-            // label2
+            // R_lbl
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(18, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(14, 15);
-            label2.TabIndex = 1;
-            label2.Text = "R";
+            R_lbl.AutoSize = true;
+            R_lbl.Location = new Point(18, 55);
+            R_lbl.Name = "R_lbl";
+            R_lbl.Size = new Size(14, 15);
+            R_lbl.TabIndex = 1;
+            R_lbl.Text = "R";
             // 
-            // label1
+            // N_lbl
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(18, 16);
-            label1.Name = "label1";
-            label1.Size = new Size(16, 15);
-            label1.TabIndex = 0;
-            label1.Text = "N";
+            N_lbl.AutoSize = true;
+            N_lbl.Location = new Point(18, 16);
+            N_lbl.Name = "N_lbl";
+            N_lbl.Size = new Size(16, 15);
+            N_lbl.TabIndex = 0;
+            N_lbl.Text = "N";
             // 
             // calcBtn
             // 
@@ -262,6 +275,60 @@
             sumAll_Box.Size = new Size(143, 23);
             sumAll_Box.TabIndex = 2;
             // 
+            // RareRune_lbl
+            // 
+            RareRune_lbl.AutoSize = true;
+            RareRune_lbl.Location = new Point(18, 16);
+            RareRune_lbl.Name = "RareRune_lbl";
+            RareRune_lbl.Size = new Size(30, 15);
+            RareRune_lbl.TabIndex = 0;
+            RareRune_lbl.Text = "Rare";
+            // 
+            // ExcellentRune_lbl
+            // 
+            ExcellentRune_lbl.AutoSize = true;
+            ExcellentRune_lbl.Location = new Point(18, 55);
+            ExcellentRune_lbl.Name = "ExcellentRune_lbl";
+            ExcellentRune_lbl.Size = new Size(54, 15);
+            ExcellentRune_lbl.TabIndex = 1;
+            ExcellentRune_lbl.Text = "Excellent";
+            // 
+            // PerfectRune_lbl
+            // 
+            PerfectRune_lbl.AutoSize = true;
+            PerfectRune_lbl.Location = new Point(18, 94);
+            PerfectRune_lbl.Name = "PerfectRune_lbl";
+            PerfectRune_lbl.Size = new Size(44, 15);
+            PerfectRune_lbl.TabIndex = 2;
+            PerfectRune_lbl.Text = "Perfect";
+            // 
+            // EpicRune_lbl
+            // 
+            EpicRune_lbl.AutoSize = true;
+            EpicRune_lbl.Location = new Point(18, 133);
+            EpicRune_lbl.Name = "EpicRune_lbl";
+            EpicRune_lbl.Size = new Size(29, 15);
+            EpicRune_lbl.TabIndex = 3;
+            EpicRune_lbl.Text = "Epic";
+            // 
+            // Light_lbl
+            // 
+            Light_lbl.AutoSize = true;
+            Light_lbl.Location = new Point(376, 16);
+            Light_lbl.Name = "Light_lbl";
+            Light_lbl.Size = new Size(34, 15);
+            Light_lbl.TabIndex = 4;
+            Light_lbl.Text = "Light";
+            // 
+            // Forge_lbl
+            // 
+            Forge_lbl.AutoSize = true;
+            Forge_lbl.Location = new Point(376, 55);
+            Forge_lbl.Name = "Forge_lbl";
+            Forge_lbl.Size = new Size(37, 15);
+            Forge_lbl.TabIndex = 5;
+            Forge_lbl.Text = "Forge";
+            // 
             // KingdomGuardCalcForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -274,6 +341,8 @@
             Name = "KingdomGuardCalcForm";
             Text = "KingdomGuardCalcForm";
             tabControl1.ResumeLayout(false);
+            Summon_Tab.ResumeLayout(false);
+            Summon_Tab.PerformLayout();
             Hero_Tab.ResumeLayout(false);
             Hero_Tab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).EndInit();
@@ -295,10 +364,10 @@
         private TabPage Dragon_Tab;
         private TabPage Hero_Tab;
         private TextBox sumAll_Box;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private Label SSR_lbl;
+        private Label SR_lbl;
+        private Label R_lbl;
+        private Label N_lbl;
         private NumericUpDown SSR_NumericBox;
         private NumericUpDown R_NumericBox;
         private NumericUpDown SR_NumericBox;
@@ -307,5 +376,11 @@
         private TextBox SR_SumBox;
         private TextBox R_SumBox;
         private TextBox N_SumBox;
+        private Label RareRune_lbl;
+        private Label EpicRune_lbl;
+        private Label PerfectRune_lbl;
+        private Label ExcellentRune_lbl;
+        private Label Forge_lbl;
+        private Label Light_lbl;
     }
 }

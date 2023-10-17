@@ -44,7 +44,7 @@
 
         private void calcBtn_Click(object sender, EventArgs e)
         {
-            var sum = NValue * 100 + RValue * 700 + SRValue * 3500 + SSRValue * 14000;  
+            var sum = NValue * 100 + RValue * 700 + SRValue * 3500 + SSRValue * 14000;
 
             sumAll_Box.Text = sum.ToString("N0");
         }
