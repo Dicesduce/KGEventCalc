@@ -172,18 +172,22 @@
             // PerfectScroll_numericbox
             // 
             PerfectScroll_numericbox.Location = new Point(115, 272);
+            PerfectScroll_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             PerfectScroll_numericbox.Name = "PerfectScroll_numericbox";
             PerfectScroll_numericbox.RightToLeft = RightToLeft.No;
             PerfectScroll_numericbox.Size = new Size(120, 23);
             PerfectScroll_numericbox.TabIndex = 22;
+            PerfectScroll_numericbox.ValueChanged += PerfectScroll_numericbox_ValueChanged;
             // 
             // AdvancedScroll_numericbox
             // 
             AdvancedScroll_numericbox.Location = new Point(115, 235);
+            AdvancedScroll_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             AdvancedScroll_numericbox.Name = "AdvancedScroll_numericbox";
             AdvancedScroll_numericbox.RightToLeft = RightToLeft.No;
             AdvancedScroll_numericbox.Size = new Size(120, 23);
             AdvancedScroll_numericbox.TabIndex = 21;
+            AdvancedScroll_numericbox.ValueChanged += AdvancedScroll_numericbox_ValueChanged;
             // 
             // PerfectScroll_lbl
             // 
@@ -275,6 +279,7 @@
             Forge_numericbox.RightToLeft = RightToLeft.No;
             Forge_numericbox.Size = new Size(120, 23);
             Forge_numericbox.TabIndex = 11;
+            Forge_numericbox.ValueChanged += Forge_numericbox_ValueChanged;
             // 
             // Light_numericbox
             // 
@@ -284,6 +289,7 @@
             Light_numericbox.RightToLeft = RightToLeft.No;
             Light_numericbox.Size = new Size(120, 23);
             Light_numericbox.TabIndex = 10;
+            Light_numericbox.ValueChanged += Light_numericbox_ValueChanged;
             // 
             // EpicRune_numericbox
             // 
@@ -293,6 +299,7 @@
             EpicRune_numericbox.RightToLeft = RightToLeft.No;
             EpicRune_numericbox.Size = new Size(120, 23);
             EpicRune_numericbox.TabIndex = 9;
+            EpicRune_numericbox.ValueChanged += EpicRune_numericbox_ValueChanged;
             // 
             // PerfectRune_numericbox
             // 
@@ -302,6 +309,7 @@
             PerfectRune_numericbox.RightToLeft = RightToLeft.No;
             PerfectRune_numericbox.Size = new Size(120, 23);
             PerfectRune_numericbox.TabIndex = 8;
+            PerfectRune_numericbox.ValueChanged += PerfectRune_numericbox_ValueChanged;
             // 
             // ExcellentRune_numericbox
             // 
@@ -311,6 +319,7 @@
             ExcellentRune_numericbox.RightToLeft = RightToLeft.No;
             ExcellentRune_numericbox.Size = new Size(120, 23);
             ExcellentRune_numericbox.TabIndex = 7;
+            ExcellentRune_numericbox.ValueChanged += ExcellentRune_numericbox_ValueChanged;
             // 
             // RareRune_numericbox
             // 
@@ -320,6 +329,7 @@
             RareRune_numericbox.RightToLeft = RightToLeft.No;
             RareRune_numericbox.Size = new Size(120, 23);
             RareRune_numericbox.TabIndex = 6;
+            RareRune_numericbox.ValueChanged += RareRune_numericbox_ValueChanged;
             // 
             // Forge_lbl
             // 
