@@ -25,9 +25,14 @@ namespace KingdomGuardEventCalculator
         private long crownsValue = 0;
         private long masterTalentValue = 0;
 
+        private long lightWitchValue = 0;
+        private long strengtheningValue = 0;
+        private long fortuneValue = 0;
+
         UnitPhaseController unitPhaseController = new UnitPhaseController();
-        HeroPhaseController heroPhaseController = new HeroPhaseController();
         SummonPhaseController summonPhaseController = new SummonPhaseController();
+        WitchPhaseController witchPhasecontroller = new WitchPhaseController();
+        HeroPhaseController heroPhaseController = new HeroPhaseController();
 
 
         public KingdomGuardCalcForm()
@@ -149,13 +154,35 @@ namespace KingdomGuardEventCalculator
         }
         #endregion
 
+        #region Witch phase
+        private void Light_witch_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            lightWitchValue = (long)Light_witch_numericBox.Value;
+            UpdateSumBox(lightWitchValue, Light_witch_sumBox, 70);
+        }
+
+        private void Strengthening_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            strengtheningValue = (long)Strengthening_numericBox.Value;
+            UpdateSumBox(strengtheningValue, Strengthening_sumBox, 3);
+        }
+
+        private void Fortune_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            fortuneValue = (long)Fortune_numericBox.Value;
+            UpdateSumBox(fortuneValue, Fortune_sumBox, 28);
+        }
+        #endregion
+
         private void calcBtn_Click(object sender, EventArgs e)
         {
             var totalUnitPhase = unitPhaseController.CalculateTotalUnitPhase(tier1Value, tier2Value, tier3Value, tier4Value, crownsValue, masterTalentValue);
             var totalHeroPhase = heroPhaseController.CalculateTotalHeroPhasePoints(nValue, rValue, srValue, ssrValue);
             var totalSummonPhase = summonPhaseController.CalculateTotalSummonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, lightValue, forgeValue, advancedScrollValue, perfectScrollValue);
+            var totalWitchPhase = witchPhasecontroller.CalculateTotalWitchPhase(lightWitchValue, strengtheningValue, fortuneValue);
 
-            var sumAllPhases = totalUnitPhase + totalHeroPhase + totalSummonPhase;
+
+            var sumAllPhases = totalUnitPhase + totalSummonPhase + totalWitchPhase + totalHeroPhase;
 
             sumAll_Box.Text = sumAllPhases.ToString("N0");
         }

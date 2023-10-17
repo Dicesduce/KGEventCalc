@@ -92,6 +92,15 @@
             N_lbl = new Label();
             calcBtn = new Button();
             sumAll_Box = new TextBox();
+            lightR_lbl = new Label();
+            strength_lbl = new Label();
+            Fortune_lbl = new Label();
+            Light_witch_numericBox = new NumericUpDown();
+            Strengthening_numericBox = new NumericUpDown();
+            Fortune_numericBox = new NumericUpDown();
+            Light_witch_sumBox = new TextBox();
+            Strengthening_sumBox = new TextBox();
+            Fortune_sumBox = new TextBox();
             tabControl1.SuspendLayout();
             Unit_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MasterTalent_numericBox).BeginInit();
@@ -109,11 +118,15 @@
             ((System.ComponentModel.ISupportInitialize)PerfectRune_numericbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)ExcellentRune_numericbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)RareRune_numericbox).BeginInit();
+            Witch_Tab.SuspendLayout();
             Hero_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Light_witch_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Strengthening_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Fortune_numericBox).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -209,6 +222,7 @@
             // MasterTalent_numericBox
             // 
             MasterTalent_numericBox.Location = new Point(425, 53);
+            MasterTalent_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             MasterTalent_numericBox.Name = "MasterTalent_numericBox";
             MasterTalent_numericBox.Size = new Size(120, 23);
             MasterTalent_numericBox.TabIndex = 11;
@@ -217,6 +231,7 @@
             // Crown_numericBox
             // 
             Crown_numericBox.Location = new Point(425, 14);
+            Crown_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             Crown_numericBox.Name = "Crown_numericBox";
             Crown_numericBox.Size = new Size(120, 23);
             Crown_numericBox.TabIndex = 10;
@@ -225,6 +240,7 @@
             // Tier4_numericBox
             // 
             Tier4_numericBox.Location = new Point(59, 131);
+            Tier4_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             Tier4_numericBox.Name = "Tier4_numericBox";
             Tier4_numericBox.Size = new Size(120, 23);
             Tier4_numericBox.TabIndex = 9;
@@ -233,6 +249,7 @@
             // Tier3_numericBox
             // 
             Tier3_numericBox.Location = new Point(59, 92);
+            Tier3_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             Tier3_numericBox.Name = "Tier3_numericBox";
             Tier3_numericBox.Size = new Size(120, 23);
             Tier3_numericBox.TabIndex = 8;
@@ -241,6 +258,7 @@
             // Tier2_numericBox
             // 
             Tier2_numericBox.Location = new Point(59, 53);
+            Tier2_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             Tier2_numericBox.Name = "Tier2_numericBox";
             Tier2_numericBox.Size = new Size(120, 23);
             Tier2_numericBox.TabIndex = 7;
@@ -249,6 +267,7 @@
             // Tier1_numericBox
             // 
             Tier1_numericBox.Location = new Point(59, 14);
+            Tier1_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
             Tier1_numericBox.Name = "Tier1_numericBox";
             Tier1_numericBox.Size = new Size(120, 23);
             Tier1_numericBox.TabIndex = 6;
@@ -581,6 +600,15 @@
             // Witch_Tab
             // 
             Witch_Tab.BackColor = SystemColors.ControlDark;
+            Witch_Tab.Controls.Add(Fortune_sumBox);
+            Witch_Tab.Controls.Add(Strengthening_sumBox);
+            Witch_Tab.Controls.Add(Light_witch_sumBox);
+            Witch_Tab.Controls.Add(Fortune_numericBox);
+            Witch_Tab.Controls.Add(Strengthening_numericBox);
+            Witch_Tab.Controls.Add(Light_witch_numericBox);
+            Witch_Tab.Controls.Add(Fortune_lbl);
+            Witch_Tab.Controls.Add(strength_lbl);
+            Witch_Tab.Controls.Add(lightR_lbl);
             Witch_Tab.Location = new Point(4, 24);
             Witch_Tab.Name = "Witch_Tab";
             Witch_Tab.Size = new Size(768, 369);
@@ -748,6 +776,84 @@
             sumAll_Box.Size = new Size(143, 23);
             sumAll_Box.TabIndex = 2;
             // 
+            // lightR_lbl
+            // 
+            lightR_lbl.AutoSize = true;
+            lightR_lbl.Location = new Point(18, 16);
+            lightR_lbl.Name = "lightR_lbl";
+            lightR_lbl.Size = new Size(34, 15);
+            lightR_lbl.TabIndex = 0;
+            lightR_lbl.Text = "Light";
+            // 
+            // strength_lbl
+            // 
+            strength_lbl.AutoSize = true;
+            strength_lbl.Location = new Point(18, 55);
+            strength_lbl.Name = "strength_lbl";
+            strength_lbl.Size = new Size(82, 15);
+            strength_lbl.TabIndex = 1;
+            strength_lbl.Text = "Strengthening";
+            // 
+            // Fortune_lbl
+            // 
+            Fortune_lbl.AutoSize = true;
+            Fortune_lbl.Location = new Point(18, 94);
+            Fortune_lbl.Name = "Fortune_lbl";
+            Fortune_lbl.Size = new Size(48, 15);
+            Fortune_lbl.TabIndex = 2;
+            Fortune_lbl.Text = "Fortune";
+            // 
+            // Light_witch_numericBox
+            // 
+            Light_witch_numericBox.Location = new Point(106, 14);
+            Light_witch_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Light_witch_numericBox.Name = "Light_witch_numericBox";
+            Light_witch_numericBox.Size = new Size(120, 23);
+            Light_witch_numericBox.TabIndex = 3;
+            Light_witch_numericBox.ValueChanged += Light_witch_numericBox_ValueChanged;
+            // 
+            // Strengthening_numericBox
+            // 
+            Strengthening_numericBox.Location = new Point(106, 53);
+            Strengthening_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Strengthening_numericBox.Name = "Strengthening_numericBox";
+            Strengthening_numericBox.Size = new Size(120, 23);
+            Strengthening_numericBox.TabIndex = 4;
+            Strengthening_numericBox.ValueChanged += Strengthening_numericBox_ValueChanged;
+            // 
+            // Fortune_numericBox
+            // 
+            Fortune_numericBox.Location = new Point(106, 92);
+            Fortune_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Fortune_numericBox.Name = "Fortune_numericBox";
+            Fortune_numericBox.Size = new Size(120, 23);
+            Fortune_numericBox.TabIndex = 5;
+            Fortune_numericBox.ValueChanged += Fortune_numericBox_ValueChanged;
+            // 
+            // Light_witch_sumBox
+            // 
+            Light_witch_sumBox.Location = new Point(232, 14);
+            Light_witch_sumBox.Name = "Light_witch_sumBox";
+            Light_witch_sumBox.ReadOnly = true;
+            Light_witch_sumBox.Size = new Size(100, 23);
+            Light_witch_sumBox.TabIndex = 6;
+            // 
+            // Strengthening_sumBox
+            // 
+            Strengthening_sumBox.Location = new Point(232, 53);
+            Strengthening_sumBox.Name = "Strengthening_sumBox";
+            Strengthening_sumBox.ReadOnly = true;
+            Strengthening_sumBox.Size = new Size(100, 23);
+            Strengthening_sumBox.TabIndex = 7;
+            // 
+            // Fortune_sumBox
+            // 
+            Fortune_sumBox.Location = new Point(232, 92);
+            Fortune_sumBox.Name = "Fortune_sumBox";
+            Fortune_sumBox.ReadOnly = true;
+            Fortune_sumBox.Size = new Size(100, 23);
+            Fortune_sumBox.TabIndex = 8;
+            // 
             // KingdomGuardCalcForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -778,12 +884,17 @@
             ((System.ComponentModel.ISupportInitialize)PerfectRune_numericbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)ExcellentRune_numericbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)RareRune_numericbox).EndInit();
+            Witch_Tab.ResumeLayout(false);
+            Witch_Tab.PerformLayout();
             Hero_Tab.ResumeLayout(false);
             Hero_Tab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Light_witch_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Strengthening_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Fortune_numericBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -854,5 +965,14 @@
         private TextBox Tier4_sumBox;
         private TextBox Tier3_sumBox;
         private TextBox Tier2_sumBox;
+        private Label Fortune_lbl;
+        private Label strength_lbl;
+        private Label lightR_lbl;
+        private NumericUpDown Fortune_numericBox;
+        private NumericUpDown Strengthening_numericBox;
+        private NumericUpDown Light_witch_numericBox;
+        private TextBox Fortune_sumBox;
+        private TextBox Strengthening_sumBox;
+        private TextBox Light_witch_sumBox;
     }
 }
