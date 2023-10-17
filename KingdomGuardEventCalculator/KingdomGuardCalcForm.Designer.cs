@@ -31,6 +31,13 @@
             tabControl1 = new TabControl();
             Unit_Tab = new TabPage();
             Summon_Tab = new TabPage();
+            PerfectScroll_sumbox = new TextBox();
+            AdvancedScroll_sumbox = new TextBox();
+            PerfectScroll_numericbox = new NumericUpDown();
+            AdvancedScroll_numericbox = new NumericUpDown();
+            PerfectScroll_lbl = new Label();
+            AdvancedScroll_lbl = new Label();
+            Buyable_lbl = new Label();
             Forge_sumbox = new TextBox();
             Light_sumbox = new TextBox();
             EpicRune_sumbox = new TextBox();
@@ -67,15 +74,10 @@
             N_lbl = new Label();
             calcBtn = new Button();
             sumAll_Box = new TextBox();
-            Buyable_lbl = new Label();
-            AdvancedScroll_lbl = new Label();
-            PerfectScroll_lbl = new Label();
-            AdvancedScroll_numericbox = new NumericUpDown();
-            PerfectScroll_numericbox = new NumericUpDown();
-            AdvancedScroll_sumbox = new TextBox();
-            PerfectScroll_sumbox = new TextBox();
             tabControl1.SuspendLayout();
             Summon_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Forge_numericbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Light_numericbox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)EpicRune_numericbox).BeginInit();
@@ -87,8 +89,6 @@
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -151,11 +151,74 @@
             Summon_Tab.TabIndex = 1;
             Summon_Tab.Text = "Summon";
             // 
+            // PerfectScroll_sumbox
+            // 
+            PerfectScroll_sumbox.Location = new Point(241, 271);
+            PerfectScroll_sumbox.Name = "PerfectScroll_sumbox";
+            PerfectScroll_sumbox.ReadOnly = true;
+            PerfectScroll_sumbox.RightToLeft = RightToLeft.No;
+            PerfectScroll_sumbox.Size = new Size(100, 23);
+            PerfectScroll_sumbox.TabIndex = 24;
+            // 
+            // AdvancedScroll_sumbox
+            // 
+            AdvancedScroll_sumbox.Location = new Point(241, 235);
+            AdvancedScroll_sumbox.Name = "AdvancedScroll_sumbox";
+            AdvancedScroll_sumbox.ReadOnly = true;
+            AdvancedScroll_sumbox.RightToLeft = RightToLeft.No;
+            AdvancedScroll_sumbox.Size = new Size(100, 23);
+            AdvancedScroll_sumbox.TabIndex = 23;
+            // 
+            // PerfectScroll_numericbox
+            // 
+            PerfectScroll_numericbox.Location = new Point(115, 272);
+            PerfectScroll_numericbox.Name = "PerfectScroll_numericbox";
+            PerfectScroll_numericbox.RightToLeft = RightToLeft.No;
+            PerfectScroll_numericbox.Size = new Size(120, 23);
+            PerfectScroll_numericbox.TabIndex = 22;
+            // 
+            // AdvancedScroll_numericbox
+            // 
+            AdvancedScroll_numericbox.Location = new Point(115, 235);
+            AdvancedScroll_numericbox.Name = "AdvancedScroll_numericbox";
+            AdvancedScroll_numericbox.RightToLeft = RightToLeft.No;
+            AdvancedScroll_numericbox.Size = new Size(120, 23);
+            AdvancedScroll_numericbox.TabIndex = 21;
+            // 
+            // PerfectScroll_lbl
+            // 
+            PerfectScroll_lbl.AutoSize = true;
+            PerfectScroll_lbl.Location = new Point(18, 274);
+            PerfectScroll_lbl.Name = "PerfectScroll_lbl";
+            PerfectScroll_lbl.Size = new Size(75, 15);
+            PerfectScroll_lbl.TabIndex = 20;
+            PerfectScroll_lbl.Text = "Perfect scroll";
+            // 
+            // AdvancedScroll_lbl
+            // 
+            AdvancedScroll_lbl.AutoSize = true;
+            AdvancedScroll_lbl.Location = new Point(18, 237);
+            AdvancedScroll_lbl.Name = "AdvancedScroll_lbl";
+            AdvancedScroll_lbl.Size = new Size(91, 15);
+            AdvancedScroll_lbl.TabIndex = 19;
+            AdvancedScroll_lbl.Text = "Advanced scroll";
+            // 
+            // Buyable_lbl
+            // 
+            Buyable_lbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            Buyable_lbl.Location = new Point(384, 190);
+            Buyable_lbl.Name = "Buyable_lbl";
+            Buyable_lbl.Size = new Size(111, 31);
+            Buyable_lbl.TabIndex = 18;
+            Buyable_lbl.Text = "Buyables";
+            Buyable_lbl.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Forge_sumbox
             // 
             Forge_sumbox.Location = new Point(493, 52);
             Forge_sumbox.Name = "Forge_sumbox";
             Forge_sumbox.ReadOnly = true;
+            Forge_sumbox.RightToLeft = RightToLeft.No;
             Forge_sumbox.Size = new Size(100, 23);
             Forge_sumbox.TabIndex = 17;
             // 
@@ -164,6 +227,7 @@
             Light_sumbox.Location = new Point(493, 13);
             Light_sumbox.Name = "Light_sumbox";
             Light_sumbox.ReadOnly = true;
+            Light_sumbox.RightToLeft = RightToLeft.No;
             Light_sumbox.Size = new Size(100, 23);
             Light_sumbox.TabIndex = 16;
             // 
@@ -172,6 +236,7 @@
             EpicRune_sumbox.Location = new Point(203, 130);
             EpicRune_sumbox.Name = "EpicRune_sumbox";
             EpicRune_sumbox.ReadOnly = true;
+            EpicRune_sumbox.RightToLeft = RightToLeft.No;
             EpicRune_sumbox.Size = new Size(100, 23);
             EpicRune_sumbox.TabIndex = 15;
             // 
@@ -180,6 +245,7 @@
             PerfectRune_sumbox.Location = new Point(203, 91);
             PerfectRune_sumbox.Name = "PerfectRune_sumbox";
             PerfectRune_sumbox.ReadOnly = true;
+            PerfectRune_sumbox.RightToLeft = RightToLeft.No;
             PerfectRune_sumbox.Size = new Size(100, 23);
             PerfectRune_sumbox.TabIndex = 14;
             // 
@@ -188,6 +254,7 @@
             ExcellentRune_sumbox.Location = new Point(203, 52);
             ExcellentRune_sumbox.Name = "ExcellentRune_sumbox";
             ExcellentRune_sumbox.ReadOnly = true;
+            ExcellentRune_sumbox.RightToLeft = RightToLeft.No;
             ExcellentRune_sumbox.Size = new Size(100, 23);
             ExcellentRune_sumbox.TabIndex = 13;
             // 
@@ -196,6 +263,7 @@
             RareRune_sumbox.Location = new Point(203, 13);
             RareRune_sumbox.Name = "RareRune_sumbox";
             RareRune_sumbox.ReadOnly = true;
+            RareRune_sumbox.RightToLeft = RightToLeft.No;
             RareRune_sumbox.Size = new Size(100, 23);
             RareRune_sumbox.TabIndex = 12;
             // 
@@ -477,66 +545,6 @@
             sumAll_Box.Size = new Size(143, 23);
             sumAll_Box.TabIndex = 2;
             // 
-            // Buyable_lbl
-            // 
-            Buyable_lbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            Buyable_lbl.Location = new Point(384, 190);
-            Buyable_lbl.Name = "Buyable_lbl";
-            Buyable_lbl.Size = new Size(111, 31);
-            Buyable_lbl.TabIndex = 18;
-            Buyable_lbl.Text = "Buyables";
-            Buyable_lbl.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // AdvancedScroll_lbl
-            // 
-            AdvancedScroll_lbl.AutoSize = true;
-            AdvancedScroll_lbl.Location = new Point(18, 237);
-            AdvancedScroll_lbl.Name = "AdvancedScroll_lbl";
-            AdvancedScroll_lbl.Size = new Size(91, 15);
-            AdvancedScroll_lbl.TabIndex = 19;
-            AdvancedScroll_lbl.Text = "Advanced scroll";
-            // 
-            // PerfectScroll_lbl
-            // 
-            PerfectScroll_lbl.AutoSize = true;
-            PerfectScroll_lbl.Location = new Point(18, 274);
-            PerfectScroll_lbl.Name = "PerfectScroll_lbl";
-            PerfectScroll_lbl.Size = new Size(75, 15);
-            PerfectScroll_lbl.TabIndex = 20;
-            PerfectScroll_lbl.Text = "Perfect scroll";
-            // 
-            // AdvancedScroll_numericbox
-            // 
-            AdvancedScroll_numericbox.Location = new Point(115, 235);
-            AdvancedScroll_numericbox.Name = "AdvancedScroll_numericbox";
-            AdvancedScroll_numericbox.RightToLeft = RightToLeft.No;
-            AdvancedScroll_numericbox.Size = new Size(120, 23);
-            AdvancedScroll_numericbox.TabIndex = 21;
-            // 
-            // PerfectScroll_numericbox
-            // 
-            PerfectScroll_numericbox.Location = new Point(115, 272);
-            PerfectScroll_numericbox.Name = "PerfectScroll_numericbox";
-            PerfectScroll_numericbox.RightToLeft = RightToLeft.No;
-            PerfectScroll_numericbox.Size = new Size(120, 23);
-            PerfectScroll_numericbox.TabIndex = 22;
-            // 
-            // AdvancedScroll_sumbox
-            // 
-            AdvancedScroll_sumbox.Location = new Point(241, 235);
-            AdvancedScroll_sumbox.Name = "AdvancedScroll_sumbox";
-            AdvancedScroll_sumbox.ReadOnly = true;
-            AdvancedScroll_sumbox.Size = new Size(100, 23);
-            AdvancedScroll_sumbox.TabIndex = 23;
-            // 
-            // PerfectScroll_sumbox
-            // 
-            PerfectScroll_sumbox.Location = new Point(241, 271);
-            PerfectScroll_sumbox.Name = "PerfectScroll_sumbox";
-            PerfectScroll_sumbox.ReadOnly = true;
-            PerfectScroll_sumbox.Size = new Size(100, 23);
-            PerfectScroll_sumbox.TabIndex = 24;
-            // 
             // KingdomGuardCalcForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -551,6 +559,8 @@
             tabControl1.ResumeLayout(false);
             Summon_Tab.ResumeLayout(false);
             Summon_Tab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)Forge_numericbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)Light_numericbox).EndInit();
             ((System.ComponentModel.ISupportInitialize)EpicRune_numericbox).EndInit();
@@ -563,8 +573,6 @@
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
