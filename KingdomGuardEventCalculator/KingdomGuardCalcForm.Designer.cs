@@ -31,6 +31,24 @@
             tabControl1 = new TabControl();
             Unit_Tab = new TabPage();
             Summon_Tab = new TabPage();
+            Forge_sumbox = new TextBox();
+            Light_sumbox = new TextBox();
+            EpicRune_sumbox = new TextBox();
+            PerfectRune_sumbox = new TextBox();
+            ExcellentRune_sumbox = new TextBox();
+            RareRune_sumbox = new TextBox();
+            Forge_numericbox = new NumericUpDown();
+            Light_numericbox = new NumericUpDown();
+            EpicRune_numericbox = new NumericUpDown();
+            PerfectRune_numericbox = new NumericUpDown();
+            ExcellentRune_numericbox = new NumericUpDown();
+            RareRune_numericbox = new NumericUpDown();
+            Forge_lbl = new Label();
+            Light_lbl = new Label();
+            EpicRune_lbl = new Label();
+            PerfectRune_lbl = new Label();
+            ExcellentRune_lbl = new Label();
+            RareRune_lbl = new Label();
             Witch_Tab = new TabPage();
             Gear_Tab = new TabPage();
             Dragon_Tab = new TabPage();
@@ -49,37 +67,28 @@
             N_lbl = new Label();
             calcBtn = new Button();
             sumAll_Box = new TextBox();
-            RareRune_lbl = new Label();
-            ExcellentRune_lbl = new Label();
-            PerfectRune_lbl = new Label();
-            EpicRune_lbl = new Label();
-            Light_lbl = new Label();
-            Forge_lbl = new Label();
-            Rare_numericbox = new NumericUpDown();
-            Excellent_numericbox = new NumericUpDown();
-            Perfect_numericbox = new NumericUpDown();
-            Epic_numericbox = new NumericUpDown();
-            Light_numericbox = new NumericUpDown();
-            Forge_numericbox = new NumericUpDown();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            Buyable_lbl = new Label();
+            AdvancedScroll_lbl = new Label();
+            PerfectScroll_lbl = new Label();
+            AdvancedScroll_numericbox = new NumericUpDown();
+            PerfectScroll_numericbox = new NumericUpDown();
+            AdvancedScroll_sumbox = new TextBox();
+            PerfectScroll_sumbox = new TextBox();
             tabControl1.SuspendLayout();
             Summon_Tab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)Forge_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)Light_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EpicRune_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PerfectRune_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ExcellentRune_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)RareRune_numericbox).BeginInit();
             Hero_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Rare_numericbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Excellent_numericbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Perfect_numericbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Epic_numericbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Light_numericbox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)Forge_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -109,18 +118,25 @@
             // Summon_Tab
             // 
             Summon_Tab.BackColor = SystemColors.ControlDark;
-            Summon_Tab.Controls.Add(textBox6);
-            Summon_Tab.Controls.Add(textBox5);
-            Summon_Tab.Controls.Add(textBox4);
-            Summon_Tab.Controls.Add(textBox3);
-            Summon_Tab.Controls.Add(textBox2);
-            Summon_Tab.Controls.Add(textBox1);
+            Summon_Tab.Controls.Add(PerfectScroll_sumbox);
+            Summon_Tab.Controls.Add(AdvancedScroll_sumbox);
+            Summon_Tab.Controls.Add(PerfectScroll_numericbox);
+            Summon_Tab.Controls.Add(AdvancedScroll_numericbox);
+            Summon_Tab.Controls.Add(PerfectScroll_lbl);
+            Summon_Tab.Controls.Add(AdvancedScroll_lbl);
+            Summon_Tab.Controls.Add(Buyable_lbl);
+            Summon_Tab.Controls.Add(Forge_sumbox);
+            Summon_Tab.Controls.Add(Light_sumbox);
+            Summon_Tab.Controls.Add(EpicRune_sumbox);
+            Summon_Tab.Controls.Add(PerfectRune_sumbox);
+            Summon_Tab.Controls.Add(ExcellentRune_sumbox);
+            Summon_Tab.Controls.Add(RareRune_sumbox);
             Summon_Tab.Controls.Add(Forge_numericbox);
             Summon_Tab.Controls.Add(Light_numericbox);
-            Summon_Tab.Controls.Add(Epic_numericbox);
-            Summon_Tab.Controls.Add(Perfect_numericbox);
-            Summon_Tab.Controls.Add(Excellent_numericbox);
-            Summon_Tab.Controls.Add(Rare_numericbox);
+            Summon_Tab.Controls.Add(EpicRune_numericbox);
+            Summon_Tab.Controls.Add(PerfectRune_numericbox);
+            Summon_Tab.Controls.Add(ExcellentRune_numericbox);
+            Summon_Tab.Controls.Add(RareRune_numericbox);
             Summon_Tab.Controls.Add(Forge_lbl);
             Summon_Tab.Controls.Add(Light_lbl);
             Summon_Tab.Controls.Add(EpicRune_lbl);
@@ -134,6 +150,162 @@
             Summon_Tab.Size = new Size(768, 369);
             Summon_Tab.TabIndex = 1;
             Summon_Tab.Text = "Summon";
+            // 
+            // Forge_sumbox
+            // 
+            Forge_sumbox.Location = new Point(493, 52);
+            Forge_sumbox.Name = "Forge_sumbox";
+            Forge_sumbox.ReadOnly = true;
+            Forge_sumbox.Size = new Size(100, 23);
+            Forge_sumbox.TabIndex = 17;
+            // 
+            // Light_sumbox
+            // 
+            Light_sumbox.Location = new Point(493, 13);
+            Light_sumbox.Name = "Light_sumbox";
+            Light_sumbox.ReadOnly = true;
+            Light_sumbox.Size = new Size(100, 23);
+            Light_sumbox.TabIndex = 16;
+            // 
+            // EpicRune_sumbox
+            // 
+            EpicRune_sumbox.Location = new Point(203, 130);
+            EpicRune_sumbox.Name = "EpicRune_sumbox";
+            EpicRune_sumbox.ReadOnly = true;
+            EpicRune_sumbox.Size = new Size(100, 23);
+            EpicRune_sumbox.TabIndex = 15;
+            // 
+            // PerfectRune_sumbox
+            // 
+            PerfectRune_sumbox.Location = new Point(203, 91);
+            PerfectRune_sumbox.Name = "PerfectRune_sumbox";
+            PerfectRune_sumbox.ReadOnly = true;
+            PerfectRune_sumbox.Size = new Size(100, 23);
+            PerfectRune_sumbox.TabIndex = 14;
+            // 
+            // ExcellentRune_sumbox
+            // 
+            ExcellentRune_sumbox.Location = new Point(203, 52);
+            ExcellentRune_sumbox.Name = "ExcellentRune_sumbox";
+            ExcellentRune_sumbox.ReadOnly = true;
+            ExcellentRune_sumbox.Size = new Size(100, 23);
+            ExcellentRune_sumbox.TabIndex = 13;
+            // 
+            // RareRune_sumbox
+            // 
+            RareRune_sumbox.Location = new Point(203, 13);
+            RareRune_sumbox.Name = "RareRune_sumbox";
+            RareRune_sumbox.ReadOnly = true;
+            RareRune_sumbox.Size = new Size(100, 23);
+            RareRune_sumbox.TabIndex = 12;
+            // 
+            // Forge_numericbox
+            // 
+            Forge_numericbox.Location = new Point(367, 53);
+            Forge_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Forge_numericbox.Name = "Forge_numericbox";
+            Forge_numericbox.RightToLeft = RightToLeft.No;
+            Forge_numericbox.Size = new Size(120, 23);
+            Forge_numericbox.TabIndex = 11;
+            // 
+            // Light_numericbox
+            // 
+            Light_numericbox.Location = new Point(367, 14);
+            Light_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Light_numericbox.Name = "Light_numericbox";
+            Light_numericbox.RightToLeft = RightToLeft.No;
+            Light_numericbox.Size = new Size(120, 23);
+            Light_numericbox.TabIndex = 10;
+            // 
+            // EpicRune_numericbox
+            // 
+            EpicRune_numericbox.Location = new Point(77, 131);
+            EpicRune_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            EpicRune_numericbox.Name = "EpicRune_numericbox";
+            EpicRune_numericbox.RightToLeft = RightToLeft.No;
+            EpicRune_numericbox.Size = new Size(120, 23);
+            EpicRune_numericbox.TabIndex = 9;
+            // 
+            // PerfectRune_numericbox
+            // 
+            PerfectRune_numericbox.Location = new Point(77, 92);
+            PerfectRune_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            PerfectRune_numericbox.Name = "PerfectRune_numericbox";
+            PerfectRune_numericbox.RightToLeft = RightToLeft.No;
+            PerfectRune_numericbox.Size = new Size(120, 23);
+            PerfectRune_numericbox.TabIndex = 8;
+            // 
+            // ExcellentRune_numericbox
+            // 
+            ExcellentRune_numericbox.Location = new Point(77, 53);
+            ExcellentRune_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            ExcellentRune_numericbox.Name = "ExcellentRune_numericbox";
+            ExcellentRune_numericbox.RightToLeft = RightToLeft.No;
+            ExcellentRune_numericbox.Size = new Size(120, 23);
+            ExcellentRune_numericbox.TabIndex = 7;
+            // 
+            // RareRune_numericbox
+            // 
+            RareRune_numericbox.Location = new Point(77, 14);
+            RareRune_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            RareRune_numericbox.Name = "RareRune_numericbox";
+            RareRune_numericbox.RightToLeft = RightToLeft.No;
+            RareRune_numericbox.Size = new Size(120, 23);
+            RareRune_numericbox.TabIndex = 6;
+            // 
+            // Forge_lbl
+            // 
+            Forge_lbl.AutoSize = true;
+            Forge_lbl.Location = new Point(327, 55);
+            Forge_lbl.Name = "Forge_lbl";
+            Forge_lbl.Size = new Size(37, 15);
+            Forge_lbl.TabIndex = 5;
+            Forge_lbl.Text = "Forge";
+            // 
+            // Light_lbl
+            // 
+            Light_lbl.AutoSize = true;
+            Light_lbl.Location = new Point(327, 16);
+            Light_lbl.Name = "Light_lbl";
+            Light_lbl.Size = new Size(34, 15);
+            Light_lbl.TabIndex = 4;
+            Light_lbl.Text = "Light";
+            // 
+            // EpicRune_lbl
+            // 
+            EpicRune_lbl.AutoSize = true;
+            EpicRune_lbl.Location = new Point(18, 133);
+            EpicRune_lbl.Name = "EpicRune_lbl";
+            EpicRune_lbl.Size = new Size(29, 15);
+            EpicRune_lbl.TabIndex = 3;
+            EpicRune_lbl.Text = "Epic";
+            // 
+            // PerfectRune_lbl
+            // 
+            PerfectRune_lbl.AutoSize = true;
+            PerfectRune_lbl.Location = new Point(18, 94);
+            PerfectRune_lbl.Name = "PerfectRune_lbl";
+            PerfectRune_lbl.Size = new Size(44, 15);
+            PerfectRune_lbl.TabIndex = 2;
+            PerfectRune_lbl.Text = "Perfect";
+            // 
+            // ExcellentRune_lbl
+            // 
+            ExcellentRune_lbl.AutoSize = true;
+            ExcellentRune_lbl.Location = new Point(18, 55);
+            ExcellentRune_lbl.Name = "ExcellentRune_lbl";
+            ExcellentRune_lbl.Size = new Size(54, 15);
+            ExcellentRune_lbl.TabIndex = 1;
+            ExcellentRune_lbl.Text = "Excellent";
+            // 
+            // RareRune_lbl
+            // 
+            RareRune_lbl.AutoSize = true;
+            RareRune_lbl.Location = new Point(18, 16);
+            RareRune_lbl.Name = "RareRune_lbl";
+            RareRune_lbl.Size = new Size(30, 15);
+            RareRune_lbl.TabIndex = 0;
+            RareRune_lbl.Text = "Rare";
             // 
             // Witch_Tab
             // 
@@ -305,161 +477,65 @@
             sumAll_Box.Size = new Size(143, 23);
             sumAll_Box.TabIndex = 2;
             // 
-            // RareRune_lbl
+            // Buyable_lbl
             // 
-            RareRune_lbl.AutoSize = true;
-            RareRune_lbl.Location = new Point(18, 16);
-            RareRune_lbl.Name = "RareRune_lbl";
-            RareRune_lbl.Size = new Size(30, 15);
-            RareRune_lbl.TabIndex = 0;
-            RareRune_lbl.Text = "Rare";
+            Buyable_lbl.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            Buyable_lbl.Location = new Point(384, 190);
+            Buyable_lbl.Name = "Buyable_lbl";
+            Buyable_lbl.Size = new Size(111, 31);
+            Buyable_lbl.TabIndex = 18;
+            Buyable_lbl.Text = "Buyables";
+            Buyable_lbl.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // ExcellentRune_lbl
+            // AdvancedScroll_lbl
             // 
-            ExcellentRune_lbl.AutoSize = true;
-            ExcellentRune_lbl.Location = new Point(18, 55);
-            ExcellentRune_lbl.Name = "ExcellentRune_lbl";
-            ExcellentRune_lbl.Size = new Size(54, 15);
-            ExcellentRune_lbl.TabIndex = 1;
-            ExcellentRune_lbl.Text = "Excellent";
+            AdvancedScroll_lbl.AutoSize = true;
+            AdvancedScroll_lbl.Location = new Point(18, 237);
+            AdvancedScroll_lbl.Name = "AdvancedScroll_lbl";
+            AdvancedScroll_lbl.Size = new Size(91, 15);
+            AdvancedScroll_lbl.TabIndex = 19;
+            AdvancedScroll_lbl.Text = "Advanced scroll";
             // 
-            // PerfectRune_lbl
+            // PerfectScroll_lbl
             // 
-            PerfectRune_lbl.AutoSize = true;
-            PerfectRune_lbl.Location = new Point(18, 94);
-            PerfectRune_lbl.Name = "PerfectRune_lbl";
-            PerfectRune_lbl.Size = new Size(44, 15);
-            PerfectRune_lbl.TabIndex = 2;
-            PerfectRune_lbl.Text = "Perfect";
+            PerfectScroll_lbl.AutoSize = true;
+            PerfectScroll_lbl.Location = new Point(18, 274);
+            PerfectScroll_lbl.Name = "PerfectScroll_lbl";
+            PerfectScroll_lbl.Size = new Size(75, 15);
+            PerfectScroll_lbl.TabIndex = 20;
+            PerfectScroll_lbl.Text = "Perfect scroll";
             // 
-            // EpicRune_lbl
+            // AdvancedScroll_numericbox
             // 
-            EpicRune_lbl.AutoSize = true;
-            EpicRune_lbl.Location = new Point(18, 133);
-            EpicRune_lbl.Name = "EpicRune_lbl";
-            EpicRune_lbl.Size = new Size(29, 15);
-            EpicRune_lbl.TabIndex = 3;
-            EpicRune_lbl.Text = "Epic";
+            AdvancedScroll_numericbox.Location = new Point(115, 235);
+            AdvancedScroll_numericbox.Name = "AdvancedScroll_numericbox";
+            AdvancedScroll_numericbox.RightToLeft = RightToLeft.No;
+            AdvancedScroll_numericbox.Size = new Size(120, 23);
+            AdvancedScroll_numericbox.TabIndex = 21;
             // 
-            // Light_lbl
+            // PerfectScroll_numericbox
             // 
-            Light_lbl.AutoSize = true;
-            Light_lbl.Location = new Point(327, 16);
-            Light_lbl.Name = "Light_lbl";
-            Light_lbl.Size = new Size(34, 15);
-            Light_lbl.TabIndex = 4;
-            Light_lbl.Text = "Light";
+            PerfectScroll_numericbox.Location = new Point(115, 272);
+            PerfectScroll_numericbox.Name = "PerfectScroll_numericbox";
+            PerfectScroll_numericbox.RightToLeft = RightToLeft.No;
+            PerfectScroll_numericbox.Size = new Size(120, 23);
+            PerfectScroll_numericbox.TabIndex = 22;
             // 
-            // Forge_lbl
+            // AdvancedScroll_sumbox
             // 
-            Forge_lbl.AutoSize = true;
-            Forge_lbl.Location = new Point(327, 55);
-            Forge_lbl.Name = "Forge_lbl";
-            Forge_lbl.Size = new Size(37, 15);
-            Forge_lbl.TabIndex = 5;
-            Forge_lbl.Text = "Forge";
+            AdvancedScroll_sumbox.Location = new Point(241, 235);
+            AdvancedScroll_sumbox.Name = "AdvancedScroll_sumbox";
+            AdvancedScroll_sumbox.ReadOnly = true;
+            AdvancedScroll_sumbox.Size = new Size(100, 23);
+            AdvancedScroll_sumbox.TabIndex = 23;
             // 
-            // Rare_numericbox
+            // PerfectScroll_sumbox
             // 
-            Rare_numericbox.Location = new Point(77, 14);
-            Rare_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
-            Rare_numericbox.Name = "Rare_numericbox";
-            Rare_numericbox.RightToLeft = RightToLeft.No;
-            Rare_numericbox.Size = new Size(120, 23);
-            Rare_numericbox.TabIndex = 6;
-            // 
-            // Excellent_numericbox
-            // 
-            Excellent_numericbox.Location = new Point(77, 53);
-            Excellent_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
-            Excellent_numericbox.Name = "Excellent_numericbox";
-            Excellent_numericbox.RightToLeft = RightToLeft.No;
-            Excellent_numericbox.Size = new Size(120, 23);
-            Excellent_numericbox.TabIndex = 7;
-            // 
-            // Perfect_numericbox
-            // 
-            Perfect_numericbox.Location = new Point(77, 92);
-            Perfect_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
-            Perfect_numericbox.Name = "Perfect_numericbox";
-            Perfect_numericbox.RightToLeft = RightToLeft.No;
-            Perfect_numericbox.Size = new Size(120, 23);
-            Perfect_numericbox.TabIndex = 8;
-            // 
-            // Epic_numericbox
-            // 
-            Epic_numericbox.Location = new Point(77, 131);
-            Epic_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
-            Epic_numericbox.Name = "Epic_numericbox";
-            Epic_numericbox.RightToLeft = RightToLeft.No;
-            Epic_numericbox.Size = new Size(120, 23);
-            Epic_numericbox.TabIndex = 9;
-            // 
-            // Light_numericbox
-            // 
-            Light_numericbox.Location = new Point(367, 14);
-            Light_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
-            Light_numericbox.Name = "Light_numericbox";
-            Light_numericbox.RightToLeft = RightToLeft.No;
-            Light_numericbox.Size = new Size(120, 23);
-            Light_numericbox.TabIndex = 10;
-            // 
-            // Forge_numericbox
-            // 
-            Forge_numericbox.Location = new Point(367, 53);
-            Forge_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
-            Forge_numericbox.Name = "Forge_numericbox";
-            Forge_numericbox.RightToLeft = RightToLeft.No;
-            Forge_numericbox.Size = new Size(120, 23);
-            Forge_numericbox.TabIndex = 11;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(203, 13);
-            textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 12;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(203, 52);
-            textBox2.Name = "textBox2";
-            textBox2.ReadOnly = true;
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 13;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(203, 91);
-            textBox3.Name = "textBox3";
-            textBox3.ReadOnly = true;
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 14;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(203, 130);
-            textBox4.Name = "textBox4";
-            textBox4.ReadOnly = true;
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 15;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(493, 13);
-            textBox5.Name = "textBox5";
-            textBox5.ReadOnly = true;
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 16;
-            // 
-            // textBox6
-            // 
-            textBox6.Location = new Point(493, 52);
-            textBox6.Name = "textBox6";
-            textBox6.ReadOnly = true;
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 17;
+            PerfectScroll_sumbox.Location = new Point(241, 271);
+            PerfectScroll_sumbox.Name = "PerfectScroll_sumbox";
+            PerfectScroll_sumbox.ReadOnly = true;
+            PerfectScroll_sumbox.Size = new Size(100, 23);
+            PerfectScroll_sumbox.TabIndex = 24;
             // 
             // KingdomGuardCalcForm
             // 
@@ -475,18 +551,20 @@
             tabControl1.ResumeLayout(false);
             Summon_Tab.ResumeLayout(false);
             Summon_Tab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)Forge_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)Light_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EpicRune_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PerfectRune_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ExcellentRune_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)RareRune_numericbox).EndInit();
             Hero_Tab.ResumeLayout(false);
             Hero_Tab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Rare_numericbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Excellent_numericbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Perfect_numericbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Epic_numericbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Light_numericbox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)Forge_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)AdvancedScroll_numericbox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PerfectScroll_numericbox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -520,17 +598,24 @@
         private Label ExcellentRune_lbl;
         private Label Forge_lbl;
         private Label Light_lbl;
-        private NumericUpDown Epic_numericbox;
-        private NumericUpDown Perfect_numericbox;
-        private NumericUpDown Excellent_numericbox;
-        private NumericUpDown Rare_numericbox;
+        private NumericUpDown EpicRune_numericbox;
+        private NumericUpDown PerfectRune_numericbox;
+        private NumericUpDown ExcellentRune_numericbox;
+        private NumericUpDown RareRune_numericbox;
         private NumericUpDown Forge_numericbox;
         private NumericUpDown Light_numericbox;
-        private TextBox textBox6;
-        private TextBox textBox5;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox Forge_sumbox;
+        private TextBox Light_sumbox;
+        private TextBox EpicRune_sumbox;
+        private TextBox PerfectRune_sumbox;
+        private TextBox ExcellentRune_sumbox;
+        private TextBox RareRune_sumbox;
+        private Label Buyable_lbl;
+        private NumericUpDown PerfectScroll_numericbox;
+        private NumericUpDown AdvancedScroll_numericbox;
+        private Label PerfectScroll_lbl;
+        private Label AdvancedScroll_lbl;
+        private TextBox PerfectScroll_sumbox;
+        private TextBox AdvancedScroll_sumbox;
     }
 }
