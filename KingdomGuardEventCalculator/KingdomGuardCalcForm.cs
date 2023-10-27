@@ -33,11 +33,19 @@ namespace KingdomGuardEventCalculator
         private long elementalVialValue = 0;
         private long bloodTitanValue = 0;
 
+        private long rareDragonRuneValue = 0;
+        private long excellentDragonRuneValue = 0;
+        private long perfectDragonRuneValue = 0;
+        private long epicDragonRuneValue = 0;
+        private long dragonSoulStoneValue = 0;
+        private long deluxeSoulStoneValue = 0;
+
         UnitPhaseController unitPhaseController = new UnitPhaseController();
         SummonPhaseController summonPhaseController = new SummonPhaseController();
         WitchPhaseController witchPhasecontroller = new WitchPhaseController();
         HeroPhaseController heroPhaseController = new HeroPhaseController();
         GearPhaseController gearPhaseController = new GearPhaseController();
+        DragonPhaseController dragonPhaseController = new DragonPhaseController();
 
 
         public KingdomGuardCalcForm()
@@ -199,6 +207,10 @@ namespace KingdomGuardEventCalculator
         }
         #endregion
 
+        #region Dragon phase
+
+        #endregion
+
         private void calcBtn_Click(object sender, EventArgs e)
         {
             var totalUnitPhase = unitPhaseController.CalculateTotalUnitPhase(tier1Value, tier2Value, tier3Value, tier4Value, crownsValue, masterTalentValue);
@@ -206,8 +218,9 @@ namespace KingdomGuardEventCalculator
             var totalSummonPhase = summonPhaseController.CalculateTotalSummonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, lightValue, forgeValue, advancedScrollValue, perfectScrollValue);
             var totalWitchPhase = witchPhasecontroller.CalculateTotalWitchPhase(lightWitchValue, strengtheningValue, fortuneValue);
             var totalGearPhase = gearPhaseController.CalculateTotalGearPhasePoints(forgeGearvalue, elementalVialValue, bloodTitanValue);
+            var totalDragonPhase = dragonPhaseController.CalculateTotalDragonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, deluxeSoulStoneValue, deluxeSoulStoneValue);
 
-            var sumAllPhases = totalUnitPhase + totalSummonPhase + totalWitchPhase + totalGearPhase + totalHeroPhase;
+            var sumAllPhases = totalUnitPhase + totalSummonPhase + totalWitchPhase + totalGearPhase + totalDragonPhase + totalHeroPhase;
 
             sumAll_Box.Text = sumAllPhases.ToString("N0");
         }
