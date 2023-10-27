@@ -1188,7 +1188,7 @@
             MaximizeBox = false;
             MaximumSize = new Size(816, 490);
             Name = "KingdomGuardCalcForm";
-            Text = "Kingdom Guard";
+            Text = "KG Event Calculator";
             tabControl1.ResumeLayout(false);
             Unit_Tab.ResumeLayout(false);
             Unit_Tab.PerformLayout();
