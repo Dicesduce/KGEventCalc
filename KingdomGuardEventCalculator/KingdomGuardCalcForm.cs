@@ -208,7 +208,41 @@ namespace KingdomGuardEventCalculator
         #endregion
 
         #region Dragon phase
+        private void RareRune_dragon_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            rareDragonRuneValue = (long)RareRune_dragon_numericBox.Value;
+            UpdateSumBox(rareDragonRuneValue, RareRune_dragon_sumBox, 70);
+        }
 
+        private void ExcellentRune_dragon_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            excellentDragonRuneValue = (long)ExcellentRune_dragon_numericBox.Value;
+            UpdateSumBox(excellentDragonRuneValue, ExcellentRune_dragon_sumBox, 700);
+        }
+
+        private void PerfectRune_dragon_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            perfectDragonRuneValue = (long)PerfectRune_dragon_numericBox.Value;
+            UpdateSumBox(perfectDragonRuneValue, PerfectRune_dragon_sumBox, 7000);
+        }
+
+        private void EpicRune_dragon_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            epicDragonRuneValue = (long)EpicRune_dragon_numericBox.Value;
+            UpdateSumBox(epicDragonRuneValue, EpicRune_dragon_sumBox, 14000);
+        }
+
+        private void DragonSoulStone_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            dragonSoulStoneValue = (long)DragonSoulStone_numericBox.Value;
+            UpdateSumBox(dragonSoulStoneValue, DragonSoulStone_sumBox, 5);
+        }
+
+        private void DeluxeSoulStone_numericBox_ValueChanged(object sender, EventArgs e)
+        {
+            deluxeSoulStoneValue = (long)DeluxeSoulStone_numericBox.Value;
+            UpdateSumBox(deluxeSoulStoneValue, DeluxeSoulStone_sumBox, 56);
+        }
         #endregion
 
         private void calcBtn_Click(object sender, EventArgs e)
@@ -218,7 +252,7 @@ namespace KingdomGuardEventCalculator
             var totalSummonPhase = summonPhaseController.CalculateTotalSummonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, lightValue, forgeValue, advancedScrollValue, perfectScrollValue);
             var totalWitchPhase = witchPhasecontroller.CalculateTotalWitchPhase(lightWitchValue, strengtheningValue, fortuneValue);
             var totalGearPhase = gearPhaseController.CalculateTotalGearPhasePoints(forgeGearvalue, elementalVialValue, bloodTitanValue);
-            var totalDragonPhase = dragonPhaseController.CalculateTotalDragonPhasePoints(rareRuneValue, excellentRuneValue, perfectRuneValue, epicRuneValue, deluxeSoulStoneValue, deluxeSoulStoneValue);
+            var totalDragonPhase = dragonPhaseController.CalculateTotalDragonPhasePoints(rareDragonRuneValue, excellentDragonRuneValue, perfectDragonRuneValue, epicDragonRuneValue, dragonSoulStoneValue, deluxeSoulStoneValue);
 
             var sumAllPhases = totalUnitPhase + totalSummonPhase + totalWitchPhase + totalGearPhase + totalDragonPhase + totalHeroPhase;
 
@@ -230,5 +264,7 @@ namespace KingdomGuardEventCalculator
             var sum = numericBoxValue * points;
             sumBox.Text = sum.ToString("N0");
         }
+
+
     }
 }

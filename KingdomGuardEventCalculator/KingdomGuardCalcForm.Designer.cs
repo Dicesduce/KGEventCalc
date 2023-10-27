@@ -111,6 +111,25 @@
             N_lbl = new Label();
             calcBtn = new Button();
             sumAll_Box = new TextBox();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label7 = new Label();
+            RareRune_dragon_numericBox = new NumericUpDown();
+            ExcellentRune_dragon_numericBox = new NumericUpDown();
+            PerfectRune_dragon_numericBox = new NumericUpDown();
+            EpicRune_dragon_numericBox = new NumericUpDown();
+            RareRune_dragon_sumBox = new TextBox();
+            ExcellentRune_dragon_sumBox = new TextBox();
+            PerfectRune_dragon_sumBox = new TextBox();
+            EpicRune_dragon_sumBox = new TextBox();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            DragonSoulStone_numericBox = new NumericUpDown();
+            DeluxeSoulStone_numericBox = new NumericUpDown();
+            DragonSoulStone_sumBox = new TextBox();
+            DeluxeSoulStone_sumBox = new TextBox();
             tabControl1.SuspendLayout();
             Unit_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)MasterTalent_numericBox).BeginInit();
@@ -136,11 +155,18 @@
             ((System.ComponentModel.ISupportInitialize)Blood_titan_numericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Elemental_vial_numericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)Forge_gear_numericBox).BeginInit();
+            Dragon_Tab.SuspendLayout();
             Hero_Tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)RareRune_dragon_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ExcellentRune_dragon_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)PerfectRune_dragon_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EpicRune_dragon_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DragonSoulStone_numericBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DeluxeSoulStone_numericBox).BeginInit();
             SuspendLayout();
             // 
             // tabControl1
@@ -816,6 +842,25 @@
             // Dragon_Tab
             // 
             Dragon_Tab.BackColor = SystemColors.ControlLight;
+            Dragon_Tab.Controls.Add(DeluxeSoulStone_sumBox);
+            Dragon_Tab.Controls.Add(DragonSoulStone_sumBox);
+            Dragon_Tab.Controls.Add(DeluxeSoulStone_numericBox);
+            Dragon_Tab.Controls.Add(DragonSoulStone_numericBox);
+            Dragon_Tab.Controls.Add(label10);
+            Dragon_Tab.Controls.Add(label9);
+            Dragon_Tab.Controls.Add(label8);
+            Dragon_Tab.Controls.Add(EpicRune_dragon_sumBox);
+            Dragon_Tab.Controls.Add(PerfectRune_dragon_sumBox);
+            Dragon_Tab.Controls.Add(ExcellentRune_dragon_sumBox);
+            Dragon_Tab.Controls.Add(RareRune_dragon_sumBox);
+            Dragon_Tab.Controls.Add(EpicRune_dragon_numericBox);
+            Dragon_Tab.Controls.Add(PerfectRune_dragon_numericBox);
+            Dragon_Tab.Controls.Add(ExcellentRune_dragon_numericBox);
+            Dragon_Tab.Controls.Add(RareRune_dragon_numericBox);
+            Dragon_Tab.Controls.Add(label7);
+            Dragon_Tab.Controls.Add(label6);
+            Dragon_Tab.Controls.Add(label5);
+            Dragon_Tab.Controls.Add(label4);
             Dragon_Tab.Location = new Point(4, 24);
             Dragon_Tab.Name = "Dragon_Tab";
             Dragon_Tab.Size = new Size(768, 369);
@@ -965,6 +1010,172 @@
             sumAll_Box.Size = new Size(143, 23);
             sumAll_Box.TabIndex = 2;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(18, 16);
+            label4.Name = "label4";
+            label4.Size = new Size(30, 15);
+            label4.TabIndex = 0;
+            label4.Text = "Rare";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(18, 55);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 15);
+            label5.TabIndex = 1;
+            label5.Text = "Excellent";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(18, 94);
+            label6.Name = "label6";
+            label6.Size = new Size(44, 15);
+            label6.TabIndex = 2;
+            label6.Text = "Perfect";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(18, 133);
+            label7.Name = "label7";
+            label7.Size = new Size(29, 15);
+            label7.TabIndex = 3;
+            label7.Text = "Epic";
+            // 
+            // RareRune_dragon_numericBox
+            // 
+            RareRune_dragon_numericBox.Location = new Point(77, 14);
+            RareRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            RareRune_dragon_numericBox.Name = "RareRune_dragon_numericBox";
+            RareRune_dragon_numericBox.Size = new Size(120, 23);
+            RareRune_dragon_numericBox.TabIndex = 4;
+            RareRune_dragon_numericBox.ValueChanged += RareRune_dragon_numericBox_ValueChanged;
+            // 
+            // ExcellentRune_dragon_numericBox
+            // 
+            ExcellentRune_dragon_numericBox.Location = new Point(77, 53);
+            ExcellentRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            ExcellentRune_dragon_numericBox.Name = "ExcellentRune_dragon_numericBox";
+            ExcellentRune_dragon_numericBox.Size = new Size(120, 23);
+            ExcellentRune_dragon_numericBox.TabIndex = 5;
+            ExcellentRune_dragon_numericBox.ValueChanged += ExcellentRune_dragon_numericBox_ValueChanged;
+            // 
+            // PerfectRune_dragon_numericBox
+            // 
+            PerfectRune_dragon_numericBox.Location = new Point(77, 92);
+            PerfectRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            PerfectRune_dragon_numericBox.Name = "PerfectRune_dragon_numericBox";
+            PerfectRune_dragon_numericBox.Size = new Size(120, 23);
+            PerfectRune_dragon_numericBox.TabIndex = 6;
+            PerfectRune_dragon_numericBox.ValueChanged += PerfectRune_dragon_numericBox_ValueChanged;
+            // 
+            // EpicRune_dragon_numericBox
+            // 
+            EpicRune_dragon_numericBox.Location = new Point(77, 131);
+            EpicRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            EpicRune_dragon_numericBox.Name = "EpicRune_dragon_numericBox";
+            EpicRune_dragon_numericBox.Size = new Size(120, 23);
+            EpicRune_dragon_numericBox.TabIndex = 7;
+            EpicRune_dragon_numericBox.ValueChanged += EpicRune_dragon_numericBox_ValueChanged;
+            // 
+            // RareRune_dragon_sumBox
+            // 
+            RareRune_dragon_sumBox.Location = new Point(203, 14);
+            RareRune_dragon_sumBox.Name = "RareRune_dragon_sumBox";
+            RareRune_dragon_sumBox.ReadOnly = true;
+            RareRune_dragon_sumBox.Size = new Size(100, 23);
+            RareRune_dragon_sumBox.TabIndex = 8;
+            // 
+            // ExcellentRune_dragon_sumBox
+            // 
+            ExcellentRune_dragon_sumBox.Location = new Point(203, 52);
+            ExcellentRune_dragon_sumBox.Name = "ExcellentRune_dragon_sumBox";
+            ExcellentRune_dragon_sumBox.ReadOnly = true;
+            ExcellentRune_dragon_sumBox.Size = new Size(100, 23);
+            ExcellentRune_dragon_sumBox.TabIndex = 9;
+            // 
+            // PerfectRune_dragon_sumBox
+            // 
+            PerfectRune_dragon_sumBox.Location = new Point(203, 91);
+            PerfectRune_dragon_sumBox.Name = "PerfectRune_dragon_sumBox";
+            PerfectRune_dragon_sumBox.ReadOnly = true;
+            PerfectRune_dragon_sumBox.Size = new Size(100, 23);
+            PerfectRune_dragon_sumBox.TabIndex = 10;
+            // 
+            // EpicRune_dragon_sumBox
+            // 
+            EpicRune_dragon_sumBox.Location = new Point(203, 130);
+            EpicRune_dragon_sumBox.Name = "EpicRune_dragon_sumBox";
+            EpicRune_dragon_sumBox.ReadOnly = true;
+            EpicRune_dragon_sumBox.Size = new Size(100, 23);
+            EpicRune_dragon_sumBox.TabIndex = 11;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(120, 190);
+            label8.Name = "label8";
+            label8.Size = new Size(109, 32);
+            label8.TabIndex = 12;
+            label8.Text = "Buyables";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(18, 274);
+            label9.Name = "label9";
+            label9.Size = new Size(100, 15);
+            label9.TabIndex = 13;
+            label9.Text = "Deluxe soul stone";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Location = new Point(18, 237);
+            label10.Name = "label10";
+            label10.Size = new Size(103, 15);
+            label10.TabIndex = 14;
+            label10.Text = "Dragon soul stone";
+            // 
+            // DragonSoulStone_numericBox
+            // 
+            DragonSoulStone_numericBox.Location = new Point(125, 235);
+            DragonSoulStone_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            DragonSoulStone_numericBox.Name = "DragonSoulStone_numericBox";
+            DragonSoulStone_numericBox.Size = new Size(120, 23);
+            DragonSoulStone_numericBox.TabIndex = 15;
+            DragonSoulStone_numericBox.ValueChanged += DragonSoulStone_numericBox_ValueChanged;
+            // 
+            // DeluxeSoulStone_numericBox
+            // 
+            DeluxeSoulStone_numericBox.Location = new Point(125, 272);
+            DeluxeSoulStone_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            DeluxeSoulStone_numericBox.Name = "DeluxeSoulStone_numericBox";
+            DeluxeSoulStone_numericBox.Size = new Size(120, 23);
+            DeluxeSoulStone_numericBox.TabIndex = 16;
+            DeluxeSoulStone_numericBox.ValueChanged += DeluxeSoulStone_numericBox_ValueChanged;
+            // 
+            // DragonSoulStone_sumBox
+            // 
+            DragonSoulStone_sumBox.Location = new Point(251, 235);
+            DragonSoulStone_sumBox.Name = "DragonSoulStone_sumBox";
+            DragonSoulStone_sumBox.ReadOnly = true;
+            DragonSoulStone_sumBox.Size = new Size(100, 23);
+            DragonSoulStone_sumBox.TabIndex = 17;
+            // 
+            // DeluxeSoulStone_sumBox
+            // 
+            DeluxeSoulStone_sumBox.Location = new Point(251, 271);
+            DeluxeSoulStone_sumBox.Name = "DeluxeSoulStone_sumBox";
+            DeluxeSoulStone_sumBox.ReadOnly = true;
+            DeluxeSoulStone_sumBox.Size = new Size(100, 23);
+            DeluxeSoulStone_sumBox.TabIndex = 18;
+            // 
             // KingdomGuardCalcForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1005,12 +1216,20 @@
             ((System.ComponentModel.ISupportInitialize)Blood_titan_numericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)Elemental_vial_numericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)Forge_gear_numericBox).EndInit();
+            Dragon_Tab.ResumeLayout(false);
+            Dragon_Tab.PerformLayout();
             Hero_Tab.ResumeLayout(false);
             Hero_Tab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)SSR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)R_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)SR_NumericBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)N_NumericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)RareRune_dragon_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ExcellentRune_dragon_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)PerfectRune_dragon_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EpicRune_dragon_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DragonSoulStone_numericBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DeluxeSoulStone_numericBox).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1100,5 +1319,24 @@
         private NumericUpDown Elemental_vial_numericBox;
         private TextBox Blood_titan_sumBox;
         private TextBox Elemental_vial_sumBox;
+        private Label label7;
+        private Label label6;
+        private Label label5;
+        private Label label4;
+        private NumericUpDown EpicRune_dragon_numericBox;
+        private NumericUpDown PerfectRune_dragon_numericBox;
+        private NumericUpDown ExcellentRune_dragon_numericBox;
+        private NumericUpDown RareRune_dragon_numericBox;
+        private TextBox EpicRune_dragon_sumBox;
+        private TextBox PerfectRune_dragon_sumBox;
+        private TextBox ExcellentRune_dragon_sumBox;
+        private TextBox RareRune_dragon_sumBox;
+        private Label label8;
+        private Label label10;
+        private Label label9;
+        private NumericUpDown DeluxeSoulStone_numericBox;
+        private NumericUpDown DragonSoulStone_numericBox;
+        private TextBox DeluxeSoulStone_sumBox;
+        private TextBox DragonSoulStone_sumBox;
     }
 }
