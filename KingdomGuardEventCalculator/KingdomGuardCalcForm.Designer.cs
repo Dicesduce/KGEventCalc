@@ -262,7 +262,7 @@
             // MasterTalent_numericBox
             // 
             MasterTalent_numericBox.Location = new Point(425, 53);
-            MasterTalent_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            MasterTalent_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             MasterTalent_numericBox.Name = "MasterTalent_numericBox";
             MasterTalent_numericBox.Size = new Size(120, 23);
             MasterTalent_numericBox.TabIndex = 11;
@@ -271,7 +271,7 @@
             // Crown_numericBox
             // 
             Crown_numericBox.Location = new Point(425, 14);
-            Crown_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Crown_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             Crown_numericBox.Name = "Crown_numericBox";
             Crown_numericBox.Size = new Size(120, 23);
             Crown_numericBox.TabIndex = 10;
@@ -307,7 +307,7 @@
             // Tier1_numericBox
             // 
             Tier1_numericBox.Location = new Point(59, 14);
-            Tier1_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Tier1_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             Tier1_numericBox.Name = "Tier1_numericBox";
             Tier1_numericBox.Size = new Size(120, 23);
             Tier1_numericBox.TabIndex = 6;
@@ -526,7 +526,7 @@
             // Forge_numericbox
             // 
             Forge_numericbox.Location = new Point(367, 53);
-            Forge_numericbox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Forge_numericbox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             Forge_numericbox.Name = "Forge_numericbox";
             Forge_numericbox.RightToLeft = RightToLeft.No;
             Forge_numericbox.Size = new Size(120, 23);
@@ -682,7 +682,7 @@
             // Fortune_numericBox
             // 
             Fortune_numericBox.Location = new Point(106, 92);
-            Fortune_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Fortune_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             Fortune_numericBox.Name = "Fortune_numericBox";
             Fortune_numericBox.Size = new Size(120, 23);
             Fortune_numericBox.TabIndex = 5;
@@ -691,7 +691,7 @@
             // Strengthening_numericBox
             // 
             Strengthening_numericBox.Location = new Point(106, 53);
-            Strengthening_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Strengthening_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             Strengthening_numericBox.Name = "Strengthening_numericBox";
             Strengthening_numericBox.Size = new Size(120, 23);
             Strengthening_numericBox.TabIndex = 4;
@@ -824,7 +824,7 @@
             // Forge_gear_numericBox
             // 
             Forge_gear_numericBox.Location = new Point(61, 14);
-            Forge_gear_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            Forge_gear_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             Forge_gear_numericBox.Name = "Forge_gear_numericBox";
             Forge_gear_numericBox.Size = new Size(120, 23);
             Forge_gear_numericBox.TabIndex = 1;
@@ -886,7 +886,7 @@
             // DeluxeSoulStone_numericBox
             // 
             DeluxeSoulStone_numericBox.Location = new Point(125, 272);
-            DeluxeSoulStone_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            DeluxeSoulStone_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             DeluxeSoulStone_numericBox.Name = "DeluxeSoulStone_numericBox";
             DeluxeSoulStone_numericBox.Size = new Size(120, 23);
             DeluxeSoulStone_numericBox.TabIndex = 16;
@@ -895,7 +895,7 @@
             // DragonSoulStone_numericBox
             // 
             DragonSoulStone_numericBox.Location = new Point(125, 235);
-            DragonSoulStone_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            DragonSoulStone_numericBox.Maximum = new decimal(new int[] { 1410065407, 2, 0, 0 });
             DragonSoulStone_numericBox.Name = "DragonSoulStone_numericBox";
             DragonSoulStone_numericBox.Size = new Size(120, 23);
             DragonSoulStone_numericBox.TabIndex = 15;
@@ -964,7 +964,7 @@
             // EpicRune_dragon_numericBox
             // 
             EpicRune_dragon_numericBox.Location = new Point(77, 131);
-            EpicRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            EpicRune_dragon_numericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             EpicRune_dragon_numericBox.Name = "EpicRune_dragon_numericBox";
             EpicRune_dragon_numericBox.Size = new Size(120, 23);
             EpicRune_dragon_numericBox.TabIndex = 7;
@@ -973,7 +973,7 @@
             // PerfectRune_dragon_numericBox
             // 
             PerfectRune_dragon_numericBox.Location = new Point(77, 92);
-            PerfectRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            PerfectRune_dragon_numericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             PerfectRune_dragon_numericBox.Name = "PerfectRune_dragon_numericBox";
             PerfectRune_dragon_numericBox.Size = new Size(120, 23);
             PerfectRune_dragon_numericBox.TabIndex = 6;
@@ -982,7 +982,7 @@
             // ExcellentRune_dragon_numericBox
             // 
             ExcellentRune_dragon_numericBox.Location = new Point(77, 53);
-            ExcellentRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            ExcellentRune_dragon_numericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             ExcellentRune_dragon_numericBox.Name = "ExcellentRune_dragon_numericBox";
             ExcellentRune_dragon_numericBox.Size = new Size(120, 23);
             ExcellentRune_dragon_numericBox.TabIndex = 5;
@@ -991,7 +991,7 @@
             // RareRune_dragon_numericBox
             // 
             RareRune_dragon_numericBox.Location = new Point(77, 14);
-            RareRune_dragon_numericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            RareRune_dragon_numericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             RareRune_dragon_numericBox.Name = "RareRune_dragon_numericBox";
             RareRune_dragon_numericBox.Size = new Size(120, 23);
             RareRune_dragon_numericBox.TabIndex = 4;
@@ -1089,7 +1089,7 @@
             // SSR_NumericBox
             // 
             SSR_NumericBox.Location = new Point(48, 131);
-            SSR_NumericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            SSR_NumericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             SSR_NumericBox.Name = "SSR_NumericBox";
             SSR_NumericBox.Size = new Size(120, 23);
             SSR_NumericBox.TabIndex = 7;
@@ -1098,7 +1098,7 @@
             // R_NumericBox
             // 
             R_NumericBox.Location = new Point(48, 53);
-            R_NumericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            R_NumericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             R_NumericBox.Name = "R_NumericBox";
             R_NumericBox.Size = new Size(120, 23);
             R_NumericBox.TabIndex = 6;
@@ -1107,7 +1107,7 @@
             // SR_NumericBox
             // 
             SR_NumericBox.Location = new Point(48, 92);
-            SR_NumericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            SR_NumericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             SR_NumericBox.Name = "SR_NumericBox";
             SR_NumericBox.Size = new Size(120, 23);
             SR_NumericBox.TabIndex = 5;
@@ -1116,7 +1116,7 @@
             // N_NumericBox
             // 
             N_NumericBox.Location = new Point(48, 14);
-            N_NumericBox.Maximum = new decimal(new int[] { 999999, 0, 0, 0 });
+            N_NumericBox.Maximum = new decimal(new int[] { 9999999, 0, 0, 0 });
             N_NumericBox.Name = "N_NumericBox";
             N_NumericBox.Size = new Size(120, 23);
             N_NumericBox.TabIndex = 4;

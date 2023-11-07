@@ -157,13 +157,13 @@ namespace KingdomGuardEventCalculator
         private void Crown_numericBox_ValueChanged(object sender, EventArgs e)
         {
             crownsValue = (long)Crown_numericBox.Value;
-            UpdateSumBox(crownsValue, Crown_sumBox, 5);
+            UpdateSumBox(crownsValue, Crown_sumBox, 56);
         }
 
         private void MasterTalent_numericBox_ValueChanged(object sender, EventArgs e)
         {
             masterTalentValue = (long)MasterTalent_numericBox.Value;
-            UpdateSumBox(masterTalentValue, MasterTalent_sumBox, 56);
+            UpdateSumBox(masterTalentValue, MasterTalent_sumBox, 5);
         }
         #endregion
 
